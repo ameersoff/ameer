@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slideshow</title>
+    <style>
+        img {
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Slideshow</h2>
+    <img id="slide" src="boy.jpg">
+    <script>
+        let images = ["cat.jpg", "theoffice.jpg", "terbakor.jpg"];
+        let index = 0;
+        function changeImage() {
+            index = (index + 1) % images.length;
+            document.getElementById("slide").src = images[index];
+        }
+        setInterval(changeImage, 2000);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    
